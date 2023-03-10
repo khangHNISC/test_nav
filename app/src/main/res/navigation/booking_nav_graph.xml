@@ -7,7 +7,11 @@
     <fragment
         android:id="@+id/bookingDetailFragment"
         android:name="com.example.vvvv.BookingDetailFragment"
-        android:label="BookingDetailFragment" >
+        android:label="BookingDetailFragment">
+        <argument
+            android:name="bookingId"
+            android:defaultValue="0"
+            app:argType="integer" />
         <action
             android:id="@+id/action_bookingDetailFragment_to_bookingSuccessFragment"
             app:destination="@id/bookingSuccessFragment" />

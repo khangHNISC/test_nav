@@ -34,6 +34,7 @@ class HomeFragment : Fragment() {
             val pendingIntent = NavDeepLinkBuilder(requireContext())
                 .setGraph(R.navigation.booking_nav_graph)
                 .setDestination(R.id.bookingSuccessFragment)
+                .setArguments(BookingDetailFragmentArgs(123).toBundle())
                 .setComponentName(BookingActivity::class.java)
                 .createPendingIntent()
 
