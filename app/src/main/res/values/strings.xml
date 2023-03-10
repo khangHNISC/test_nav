@@ -2,4 +2,6 @@
     <string name="app_name">vvvv</string>
     <string name="button_to_sec">Next</string>
     <string name="frag_detail_text">yes am a detail fragment</string>
+    <string name="booking_detail_text">here is your booking detail</string>
+    <string name="success_text">booking success bro</string>
 </resources>

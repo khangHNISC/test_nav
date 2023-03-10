@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/booking_nav_graph"
+    app:startDestination="@id/bookingDetailFragment">
+
+    <fragment
+        android:id="@+id/bookingDetailFragment"
+        android:name="com.example.vvvv.BookingDetailFragment"
+        android:label="BookingDetailFragment" >
+        <action
+            android:id="@+id/action_bookingDetailFragment_to_bookingSuccessFragment"
+            app:destination="@id/bookingSuccessFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bookingSuccessFragment"
+        android:name="com.example.vvvv.BookingSuccessFragment"
+        android:label="BookingSuccessFragment" />
+</navigation>
