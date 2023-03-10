@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">vvvv</string>
+    <string name="button_to_sec">Next</string>
+    <string name="frag_detail_text">yes am a detail fragment</string>
+</resources>
