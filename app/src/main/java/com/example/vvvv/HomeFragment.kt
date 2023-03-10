@@ -1,6 +1,7 @@
 package com.example.vvvv
 
 import android.app.NotificationManager
+import android.app.PendingIntent
 import android.content.Context
 import android.content.Intent
 import android.media.RingtoneManager
@@ -58,7 +59,9 @@ class HomeFragment : Fragment() {
         }
 
         binding.next.setOnClickListener {
-            startActivity(Intent(requireContext(), BookingActivity::class.java))
+            val intent = Intent(requireContext(), BookingActivity::class.java)
+            intent.putExtra("bookingId", 123)
+            startActivity(intent)
         }
     }
 }

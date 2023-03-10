@@ -26,9 +26,10 @@ class BookingDetailFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val id = args.bookingId
+        val id2 = BookingDetailFragmentArgs.fromBundle(requireActivity().intent?.extras!!).bookingId
         binding.next.setOnClickListener {
             findNavController().navigate(R.id.action_bookingDetailFragment_to_bookingSuccessFragment)
         }
-        binding.bookingDetailText.text = "Booking ID: $id"
+        binding.bookingDetailText.text = "Booking ID: $id2"
     }
 }
